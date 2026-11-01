@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shiro · 个人网站</title>
+  <meta name="description" content="shiro 的个人网站：自我介绍、项目作品与博客。">
+  <meta name="keywords" content="shiro, 个人网站, 博客, 项目, 作品集">
+  <meta name="author" content="shiro">
+  <link rel="canonical" href="https://shiro0215.github.io/">
+
+  <!-- Open Graph（社交分享卡片） -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="shiro · 个人网站">
+  <meta property="og:description" content="shiro 的个人网站：自我介绍、项目作品与博客。">
+  <meta property="og:url" content="https://shiro0215.github.io/">
+  <meta property="og:site_name" content="shiro">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="shiro · 个人网站">
+  <meta name="twitter:description" content="shiro 的个人网站：自我介绍、项目作品与博客。">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- 结构化数据：帮助搜索引擎理解“这是一个人” -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "shiro",
+    "url": "https://shiro0215.github.io/",
+    "description": "shiro 的个人网站"
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">shiro<span class="dot">.</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link active">首页</a>
+        <a href="projects.html" class="nav-link">项目</a>
+        <a href="blog.html" class="nav-link">博客</a>
+        <a href="contact.html" class="nav-link">联系</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换深浅色主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-badge"><span class="pulse"></span>欢迎来到我的小站</span>
+          <h1>你好，我是<br><span class="gradient-text">shiro</span></h1>
+          <p class="hero-subtitle">你好？—— 这里是占位文案，请换成你的自我介绍：你是谁、在做什么、擅长什么。</p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">看看我的项目</a>
+            <a href="contact.html" class="btn btn-ghost">联系我</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-ring">
+            <div class="avatar-inner"><span class="gradient-text">S</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">About</span>
+          <h2 class="section-title">关于我</h2>
+          <p class="section-desc">几句话让别人快速认识你。以下是三个占位卡片，替换成你的真实信息即可。</p>
+        </div>
+        <div class="about-grid">
+          <div class="info-card reveal">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+            <h3>我是谁</h3>
+            <p>占位文案：写一句简短的身份介绍，例如职业、身份或兴趣标签。</p>
+          </div>
+          <div class="info-card reveal">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+            <h3>我在做什么</h3>
+            <p>占位文案：介绍你目前在做的事、专注的方向或正在学习的内容。</p>
+          </div>
+          <div class="info-card reveal">
+            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+            <h3>我喜欢什么</h3>
+            <p>占位文案：写写你的兴趣爱好，让别人找到共同话题。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目精选 -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Projects</span>
+          <h2 class="section-title">精选项目</h2>
+          <p class="section-desc">展示你的作品。下面是三个占位卡片，点击进入项目页可看到完整列表。</p>
+        </div>
+        <div class="grid">
+          <a href="projects.html" class="card reveal">
+            <div class="card-media">🚀</div>
+            <div class="card-body">
+              <span class="card-tag">项目一</span>
+              <h3 class="card-title">项目名称占位</h3>
+              <p class="card-text">一句话描述这个项目解决了什么问题、用了什么技术。</p>
+              <span class="card-link">了解更多 →</span>
+            </div>
+          </a>
+          <a href="projects.html" class="card reveal">
+            <div class="card-media">🧩</div>
+            <div class="card-body">
+              <span class="card-tag">项目二</span>
+              <h3 class="card-title">项目名称占位</h3>
+              <p class="card-text">一句话描述这个项目解决了什么问题、用了什么技术。</p>
+              <span class="card-link">了解更多 →</span>
+            </div>
+          </a>
+          <a href="projects.html" class="card reveal">
+            <div class="card-media">🎨</div>
+            <div class="card-body">
+              <span class="card-tag">项目三</span>
+              <h3 class="card-title">项目名称占位</h3>
+              <p class="card-text">一句话描述这个项目解决了什么问题、用了什么技术。</p>
+              <span class="card-link">了解更多 →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 博客预览 -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Blog</span>
+          <h2 class="section-title">最新文章</h2>
+          <p class="section-desc">持续写文章是让网站被搜索引擎收录的好办法。先放占位文章。</p>
+        </div>
+        <div class="grid">
+          <a href="blog.html" class="card reveal">
+            <div class="card-media">📝</div>
+            <div class="card-body">
+              <span class="card-tag">2026-11-01</span>
+              <h3 class="card-title">第一篇文章（占位）</h3>
+              <p class="card-text">这是一篇占位文章，之后替换成你真正想写的内容。</p>
+              <span class="card-link">阅读全文 →</span>
+            </div>
+          </a>
+          <a href="blog.html" class="card reveal">
+            <div class="card-media">💡</div>
+            <div class="card-body">
+              <span class="card-tag">2026-10-15</span>
+              <h3 class="card-title">分享一个想法（占位）</h3>
+              <p class="card-text">记录想法、教程、经验都可以，内容越多越容易被搜索到。</p>
+              <span class="card-link">阅读全文 →</span>
+            </div>
+          </a>
+          <a href="blog.html" class="card reveal">
+            <div class="card-media">🔧</div>
+            <div class="card-body">
+              <span class="card-tag">2026-10-01</span>
+              <h3 class="card-title">一次折腾记录（占位）</h3>
+              <p class="card-text">分享你折腾过的工具、踩过的坑，都是很好的内容。</p>
+              <span class="card-link">阅读全文 →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container reveal">
+        <div class="section-head" style="text-align:center;">
+          <h2 class="section-title">想和我聊聊？</h2>
+          <p class="section-desc" style="margin-left:auto;margin-right:auto;">无论是合作、交流还是单纯打个招呼，都欢迎。</p>
+          <div class="hero-actions" style="justify-content:center;margin-top:24px;">
+            <a href="contact.html" class="btn btn-primary">联系我</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand">shiro<span class="dot">.</span></div>
+      <p>© <span id="year">2026</span> shiro · 用 ❤️ 与代码搭建</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>博客 · shiro</title>
+  <meta name="description" content="shiro 的博客，记录想法、教程与经验。">
+  <meta name="keywords" content="shiro, 博客, 文章, 教程">
+  <link rel="canonical" href="https://shiro0215.github.io/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="博客 · shiro">
+  <meta property="og:description" content="shiro 的博客，记录想法、教程与经验。">
+  <meta property="og:url" content="https://shiro0215.github.io/blog.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") {
+          document.documentElement.setAttribute("data-theme", t);
+        } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">shiro<span class="dot">.</span></a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">首页</a>
+        <a href="projects.html" class="nav-link">项目</a>
+        <a href="blog.html" class="nav-link active">博客</a>
+        <a href="contact.html" class="nav-link">联系</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换深浅色主题">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="padding-top:48px;">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Blog</span>
+          <h2 class="section-title">博客文章</h2>
+          <p class="section-desc">持续更新内容，是提升网站被搜索收录概率的最好方式。</p>
+        </div>
+        <div class="grid">
+          <a href="#" class="card reveal">
+            <div class="card-media">📝</div>
+            <div class="card-body">
+              <span class="card-tag">2026-11-01</span>
+              <h3 class="card-title">第一篇文章（占位）</h3>
+              <p class="card-text">这是一篇占位文章，之后替换成你真正想写的内容。</p>
+              <span class="card-link">阅读全文 →</span>
+            </div>
+          </a>
+          <a href="#" class="card reveal">
+            <div class="card-media">💡</div>
+            <div class="card-body">
+              <span class="card-tag">2026-10-15</span>
+              <h3 class="card-title">分享一个想法（占位）</h3>
+              <p class="card-text">记录想法、教程、经验都可以，内容越多越容易被搜索到。</p>
+              <span class="card-link">阅读全文 →</span>
+            </div>
+          </a>
+          <a href="#" class="card reveal">
+            <div class="card-media">🔧</div>
+            <div class="card-body">
+              <span class="card-tag">2026-10-01</span>
+              <h3 class="card-title">一次折腾记录（占位）</h3>
+              <p class="card-text">分享你折腾过的工具、踩过的坑，都是很好的内容。</p>
+              <span class="card-link">阅读全文 →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="brand">shiro<span class="dot">.</span></div>
+      <p>© <span id="year">2026</span> shiro · 用 ❤️ 与代码搭建</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
